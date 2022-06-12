@@ -43,8 +43,8 @@ function gotResult(error, result) {
 	} 
 	else {
 		console.log(result);
-		document.getElementBy("result_emotion_name").innerHTML = result[0].label;
-		document.getElementBy("result_emotion_name2").innerHTML = result[1].label;
+		document.getElementById("result_emotion_name").innerHTML = result[0].label;
+		document.getElementById("result_emotion_name2").innerHTML = result[1].label;
 		prediction_1 = result[0].label;
 		prediction_2 = result[1].label;
 		speak();
